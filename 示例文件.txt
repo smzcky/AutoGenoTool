@@ -1,0 +1,157 @@
+DATASEG_Tx_Message
+#define COM_TXIPDUTCO1 		(0U)  
+#define COM_TXIPDUTPRS    	(1U)
+#define COM_TXIPDUReqPGN    (2U)
+#define COM_TXIPDUVDHR    	(3U)
+#define COM_TXIPDUAUXIO_R    (4U)
+#define COM_TXIPDUDashDisplay    (5U)
+#define COM_TXIPDUAIR1AirSupplyPressure    (6U)
+#define COM_TXIPDUDLCD1DirectLampControlData1    (7U)
+#define COM_TXIPDULFE1FuelEconomy    (8U)
+#define COM_TXIPDUECMCtrlCmd    (9U)
+
+DATASEG_Tx_Signal
+/*TCO1 JMC_JH476_geno*/
+#define COM_TXSIGTcoShaftSpeed    (0U)
+#define COM_TXSIGTcoVehicleSpeed    (1U)
+/*TPRS JMC_JH476_geno*/
+#define COM_TXSIGTireLocation_TPRS    (2U)
+#define COM_TXSIGRefTireSettingCmd    (3U)
+/*ReqPGN JMC_JH476_geno*/
+#define COM_TXSIGReqPgnNum    (4U)
+/*VDHR JMC_JH476_geno*/
+#define COM_TXSIGTotalVehicleDistance    (5U)
+#define COM_TXSIGTripDistance    (6U)
+/*AUXIO_R JMC_JH476_geno*/
+#define COM_TXSIGTrailerBrakestatus    (7U)
+#define COM_TXSIGOilChangeStatus    (8U)
+#define COM_TXSIGGearboxNeutralPos    (9U)
+#define COM_TXSIGCabinTiltSwitch    (10U)
+#define COM_TXSIGAverageVehicleSpeed    (11U)
+/*DashDisplay JMC_JH476_geno*/
+#define COM_TXSIGFuelLevel    (12U)
+#define COM_TXSIGCargoAmbientTemperature    (13U)
+#define COM_TXSIGDistancetoempty    (14U)
+/*AIR1AirSupplyPressure JMC_JH476_geno*/
+#define COM_TXSIGServiceBrakeAirPressureCircuit1    (15U)
+#define COM_TXSIGServiceBrakeAirPressureCircuit2    (16U)
+/*DLCD1DirectLampControlData1 JMC_JH476_geno*/
+#define COM_TXSIGOBDMalfunctIndicatLampData    (17U)
+#define COM_TXSIGEngineBrakeActiveLampData    (18U)
+#define COM_TXSIGEngineOilPressuLowLampData   (19U)
+#define COM_TXSIGEngineCoolantTemperHighLampData    (20U)
+#define COM_TXSIGEngineCoolantLevelLowLampData    (21U)
+#define COM_TXSIGEngineAirFilterRestrictiLampData    (22U)
+#define COM_TXSIGBrakeAirPressLowCircuit2   (23U)
+#define COM_TXSIGBrakeAirPressuLowCircuit1    (24U)
+#define COM_TXSIGLowFuelLevelLampData    (25U)
+#define COM_TXSIGStopLampData    (26U)
+/*LFE1FuelEconomy JMC_JH476_geno*/
+#define COM_TXSIGAverageFuelEconomy    (27U)
+/*ECMCtrlCmd JMC_JH476_geno*/
+#define COM_TXSIGVehicleSpeedLimit    (28U)
+#define COM_TXSIGTorqueLimit    (29U)
+#define COM_TXSIGEngineStartLimit    (30U)
+#define COM_TXSIGTorqueLimitStatus    (31U)
+#define COM_TXSIGVehicleSpeedLimitStatus    (32U)
+
+
+DATASEG_Rx_Message
+#define COM_RXIPDUEEC1    (0U)
+#define COM_RXIPDUOELC    (1U)
+#define COM_RXIPDUERC1    (2U)
+#define COM_RXIPDUEBC1    (3U)
+#define COM_RXIPDUEAC1    (4U)
+#define COM_RXIPDUTPRI    (5U)
+#define COM_RXIPDULightData    (6U)
+#define COM_RXIPDUATI1    (7U)
+#define COM_RXIPDUSHUTDN    (8U)
+#define COM_RXIPDUEngineHours    (9U)
+#define COM_RXIPDUTIME_DATE    (10U)
+#define COM_RXIPDULFC    (11U)
+#define COM_RXIPDUET1    (12U)
+#define COM_RXIPDUEFL_P1    (13U)
+#define COM_RXIPDUCCVS_ECM    (14U)
+#define COM_RXIPDUCCVS_BCM    (15U)
+#define COM_RXIPDULFE    (16U)
+#define COM_RXIPDUTIRE    (17U)
+#define COM_RXIPDUWFI    (18U)
+
+DATASEG_Rx_Signal
+
+
+/*EEC1 JMC_JH476_geno*/
+#define COM_RXSIGEngineSpeed    (0U)
+/*OELC JMC_JH476_geno*/
+#define COM_RXSIGHighLowBeam    (1U)
+/*ERC1 JMC_JH476_geno*/
+#define COM_RXSIGActualRetarderPercentTorque    (2U)
+/*EBC1 JMC_JH476_geno*/
+#define COM_RXSIGABS_EBSAmberWrnLampState    (3U)
+#define COM_RXSIGATC_ASRLampState    (4U)
+/*EAC1 JMC_JH476_geno*/
+#define COM_RXSIGDifferentialLock1    (5U)
+#define COM_RXSIGDifferentialLock2    (6U)
+#define COM_RXSIGInterlock    (7U)
+/*TPRI JMC_JH476_geno*/
+#define COM_RXSIGTireLocation_TPRI    (8U)
+#define COM_RXSIGRefTireSetASK    (9U)
+/*LightData JMC_JH476_geno*/
+#define COM_RXSIGFrontFogLight    (10U)
+#define COM_RXSIGRearFogLight    (11U)
+/*ATI1 JMC_JH476_geno*/
+#define COM_RXSIGCatalystTankLevel    (12U)
+#define COM_RXSIGAdBlueWarnLevel    (13U)
+/*SHUTDN JMC_JH476_geno*/
+#define COM_RXSIGWaitToStartLamp    (14U)
+/*EngineHours JMC_JH476_geno*/
+#define COM_RXSIGTotalEngineHours    (15U)
+/*TIME_DATE JMC_JH476_geno*/
+#define COM_RXSIGSeconds    (16U)
+#define COM_RXSIGMinutes    (17U)
+#define COM_RXSIGHours    (18U)
+#define COM_RXSIGMonth    (19U)
+#define COM_RXSIGDay    (20U)
+#define COM_RXSIGYear    (21U)
+#define COM_RXSIGLocalMinuteOffset    (22U)
+#define COM_RXSIGLocalHourOffset    (23U)
+/*LFC JMC_JH476_geno*/
+#define COM_RXSIGTotalFuelUsed    (24U)
+/*ET1 JMC_JH476_geno*/
+#define COM_RXSIGEngineCoolantTemperature    (25U)
+/*EFL_P1 JMC_JH476_geno*/
+#define COM_RXSIGEngineOilLevel    (26U)
+#define COM_RXSIGEngineOilPressure    (27U)
+/*CCVS_ECM JMC_JH476_geno*/
+#define COM_RXSIGParkingBrakeSwitch    (28U)
+#define COM_RXSIGCruiseControlActive_ECM    (29U)
+/*CCVS_BCM JMC_JH476_geno*/
+#define COM_RXSIGPTOState    (30U)
+/*LFE JMC_JH476_geno*/
+#define COM_RXSIGFuelRate    (31U)
+#define COM_RXSIGInstantaneousFuelEconomy    (32U)
+#define COM_RXSIGAverageFuelEconomy    (33U)
+/*TIRE JMC_JH476_geno*/
+#define COM_RXSIGTireLocation_TIRE    (34U)
+#define COM_RXSIGTirePressure    (35U)
+#define COM_RXSIGTireTemperature    (36U)
+#define COM_RXSIGSensorStatus    (37U)
+#define COM_RXSIGTireAirLeakStatus    (38U)
+#define COM_RXSIGTireTempThresDetection    (39U)
+#define COM_RXSIGTirePrsureThresDection    (40U)
+/*WFI JMC_JH476_geno*/
+#define COM_RXSIGWaterInFuel    (41U)
+#define COM_RXSIGTamperFaultBlockedEGR   (42U)
+#define COM_RXSIGServiceDistance    (43U)
+#define COM_RXSIGLowOilIndicator    (44U)
+/*EngineStatusResponse JMC_JH476_geno*/
+#define COM_RXSIGEngineStartStatus    (45U)
+#define COM_RXSIGEngineTorque    (46U)
+#define COM_RXSIGVehicleSpeedStatus    (47U)
+/* ECCRS JMC_JH476_geno*/
+#define COM_RXSIGEngStartLimitRecvSt  (48U)
+#define COM_RXSIGEngTorqueLimitRecvSt    (49U)
+#define COM_RXSIGVehicleSpeedLimitRecvSt (50U)
+/* TBoxRespCmd JMC_JH476_geno*/
+#define COM_RXSIGVinStateResp   (51U)
+#define COM_RXSIGLoanState      (52U)
